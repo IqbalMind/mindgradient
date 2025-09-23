@@ -1,0 +1,229 @@
+/**
+ * mindgradient.css
+ * Version: 1.0.0
+ * Author: IqbalMind
+ * A simple, modern, and easy-to-use CSS gradient library built with customization in mind.
+ *
+ * --- USAGE ---
+ * 1. Link this CSS file in your HTML: <link rel="stylesheet" href="modern-gradients.css">
+ * 2. Add the desired gradient class to any element.
+ * Example: <div class="grd-sunset"></div>
+ * 3. To add a subtle animation, also add the 'grd-animated' class.
+ * Example: <div class="grd-sunset grd-animated"></div>
+ *
+ * --- CUSTOMIZATION ---
+ * Easily change the colors of any gradient by overriding its CSS variables in your own stylesheet.
+ * Your custom styles must be loaded AFTER modern-gradients.css.
+ *
+ * Example in your own CSS file:
+ * .grd-sunset {
+ * --grd-color-1: #6a11cb; /* A new starting color 
+ * --grd-color-2: #2575fc; /* A new ending color
+ * }
+ */
+
+/* --- Animation --- */
+@keyframes grd-pan {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.grd-animated {
+  background-size: 200% 200%;
+  animation: grd-pan 15s ease infinite;
+}
+
+
+/* --- WARM TONES --- */
+
+.grd-sunset {
+  --grd-color-1: #FF9A8B;
+  --grd-color-2: #FF6A88;
+  --grd-color-3: #FF99AC;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 55%, var(--grd-color-3) 100%);
+}
+
+.grd-peach {
+  --grd-color-1: #FFDEE9;
+  --grd-color-2: #B5FFFC;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-fire {
+  --grd-color-1: #FAD961;
+  --grd-color-2: #F76B1C;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-mango {
+  --grd-color-1: #f7b733;
+  --grd-color-2: #fc4a1a;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+
+/* --- COOL TONES --- */
+
+.grd-ocean {
+  --grd-color-1: #2AF598;
+  --grd-color-2: #009EFD;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-lush {
+  --grd-color-1: #85FFBD;
+  --grd-color-2: #FFFB7D;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-lavender {
+  --grd-color-1: #D4C2FC;
+  --grd-color-2: #A2C2F7;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-night-sky {
+  --grd-color-1: #2c3e50;
+  --grd-color-2: #4ca1af;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+
+/* --- VIBRANT & MODERN --- */
+
+.grd-cosmic {
+  --grd-color-1: #8EC5FC;
+  --grd-color-2: #E0C3FC;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-hyper {
+  --grd-color-1: #fa709a;
+  --grd-color-2: #fee140;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-aurora {
+  --grd-color-1: #72EDF2;
+  --grd-color-2: #5151E5;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-rose {
+  --grd-color-1: #F7C2C2;
+  --grd-color-2: #C4A5A5;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+/* --- MONOCHROME & ELEGANT --- */
+
+.grd-silver {
+  --grd-color-1: #D9D9D9;
+  --grd-color-2: #f0f0f0;
+  --grd-color-3: #D9D9D9;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 50%, var(--grd-color-3) 100%);
+}
+
+.grd-steel {
+  --grd-color-1: #3d4e61;
+  --grd-color-2: #647a94;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-violet {
+  --grd-color-1: #834d9b;
+  --grd-color-2: #d04ed6;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-teal {
+  --grd-color-1: #00b09b;
+  --grd-color-2: #96c93d;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+
+/* --- PASTEL & SOFT --- */
+
+.grd-mellow {
+  --grd-color-1: #f8ffae;
+  --grd-color-2: #43c6ac;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-sky {
+  --grd-color-1: #e0eafc;
+  --grd-color-2: #cfdef3;
+  background-color: var(--grd-color-1); /* Fallback */
+  background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-powder {
+    --grd-color-1: #e6e9f0;
+    --grd-color-2: #eef1f5;
+    background-color: var(--grd-color-1); /* Fallback */
+    background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-minty {
+    --grd-color-1: #91EAE4;
+    --grd-color-2: #86A8E7;
+    --grd-color-3: #7F7FD5;
+    background-color: var(--grd-color-1); /* Fallback */
+    background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 50%, var(--grd-color-3) 100%);
+}
+
+
+/* --- BOLD & DRAMATIC --- */
+
+.grd-royal {
+    --grd-color-1: #141E30;
+    --grd-color-2: #243B55;
+    background-color: var(--grd-color-1); /* Fallback */
+    background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-passion {
+    --grd-color-1: #f43b47;
+    --grd-color-2: #453a94;
+    background-color: var(--grd-color-1); /* Fallback */
+    background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-midnight {
+    --grd-color-1: #000000;
+    --grd-color-2: #434343;
+    background-color: var(--grd-color-1); /* Fallback */
+    background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
+
+.grd-emerald {
+    --grd-color-1: #0f9b0f;
+    --grd-color-2: #38ef7d;
+    background-color: var(--grd-color-1); /* Fallback */
+    background-image: linear-gradient(45deg, var(--grd-color-1) 0%, var(--grd-color-2) 100%);
+}
