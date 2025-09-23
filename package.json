@@ -1,0 +1,34 @@
+{
+  "name": "mindgradient",
+  "version": "1.0.0",
+  "description": "A modern, customizable, and easy-to-use CSS gradient library for creating beautiful, animated gradients.",
+  "main": "mindgradient.css",
+  "style": "mindgradient.css",
+  "files": [
+    "mindgradient.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iqbalmind/mindgradient.git"
+  },
+  "keywords": [
+    "css",
+    "gradient",
+    "css-library",
+    "animation",
+    "modern",
+    "customizable",
+    "ui",
+    "design",
+    "frontend",
+  ],
+  "author": "IqbalMind",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iqbalmind/mindgradient/issues"
+  },
+  "homepage": "https://github.com/iqbalmind/mindgradient#readme"
+}
